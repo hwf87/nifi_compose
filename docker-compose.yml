@@ -18,8 +18,8 @@ services:
   postgres:
     image: postgres
     environment:
-      POSTGRES_USER: hyman
-      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: jackyfu
+      POSTGRES_PASSWORD: 8888
       PGDATA: /data/postgres
     volumes:
        - ./postgres:/data/postgres
@@ -29,7 +29,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     environment: 
-      PGADMIN_DEFAULT_EMAIL: hyman@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: 1234
+      PGADMIN_DEFAULT_EMAIL: jackyfu1995@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: 8888
     ports:
       - "8081:80"
